@@ -1,0 +1,631 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color:#fff;
+    --text-color:#221314;
+    --second-color:#5a7184;
+    --main-color:black;
+    --big-font:6rem;
+    --h2-font:3rem;
+    --p-font:1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    max-height: 55%;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: ease .40s;
+    background-color:gray;
+   
+
+}
+.logo{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:black;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+        color: black;
+        font-size: var(--p-font);
+        font-weight: 500;
+        padding: 10px 22px;
+        border-radius: 4px;
+        transition: ease .40s;
+        background: #8d4343;
+        
+       
+        }
+        
+.navbar a:hover{
+    background: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 5px 10px 30px rgb(85 85 85 /20%);
+    border-radius: 4px;
+   
+    
+}
+
+#menu-icon{
+    color: var(--bg-color);
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+   
+}
+section{
+    padding: 80px 18%;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url(../img/hiking2.jpg) ;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    line-height: 1.2;
+    color: black;
+    font-family: cursive;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+.home-text p{
+    color:rgb(247, 29, 29);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 50px;
+    font-family: monospace;
+}
+.home-btn{
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 30px;
+    background: blue;
+    color: var(--main-color);
+    border-radius: 4px;
+    transition: ease .40s;
+}
+.home-btn:hover{
+    background: var(--bg-color);
+    transform: scale(1.1);
+}
+.text h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+    padding: 80px;
+    color: #3a1a1c;
+}
+.body{
+    height: 100%;
+    margin-bottom: -15%;
+}
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 6%;
+
+}
+    .container .card{
+        width: 500px;
+        position: relative;
+        height: 650px;
+        background: #f0f0f0;
+        margin: 30px 10px;
+        padding: 26px 20px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0.5px 10px #e6e6e6;
+        transition: 0.3s ease-in-out;
+        margin-top: 5%;
+        font-family: cursive;
+        
+        
+
+    }
+    .container .card .imgBx{
+        position: relative;
+        width: 320px;
+        height: 260px;
+        top: -50px;
+        left: 23px;
+        box-shadow: 0 5px 20px rbga (0,0,0,1.2);
+        font-family: cursive;
+        font-size: 20px;
+        font-weight: 400;
+
+    }
+    .container .card .imgBx img{
+        max-width: 140%;
+        border-radius: 10px;
+
+    }
+    
+    .imgBx:hover img{
+        transform: scale(1.1);
+    }
+    .some{
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        background: url(../img/Blue-Nile-Falls-Ethiopia.jpg) ;
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    html,body{
+        height: 100%;
+    }
+    #main{
+        overflow: auto;
+        padding-bottom: 100px;
+    }
+    #footer{
+       padding-right: 65px;
+        background-color: gray;
+        position: relative;
+        height: 300px;
+        margin-top: 210%;
+        clear: both;
+    }
+    .email{
+        color: white;
+    }
+    .lali-button{
+        background-color: #ec1708;
+        height: 100px;
+        width: 150px ;
+        
+        border-radius: 30%;
+    font-size: 30px;
+        font-weight: 600;
+        font-family: cursive;
+
+    }
+   
+    ul{
+        list-style: none;
+    }
+    .doo a {
+        font-size: 1.1em;
+        color: #0e0c0c;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 40px;
+        margin-top: 250%;
+        padding-right:10%;
+    }
+    .doo a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background: #8d4343;
+        border-radius: 5px;
+        transform-origin:right ;
+        transform: scaleX(0);
+        transition: transform .5s;
+        margin-top: 100%;
+        padding-left: 10%;
+    }
+   
+    .h1{
+        font-size: 500%;
+    }
+    .p{
+        font-size: xx-large;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .container2{
+        position: relative;
+        width: 2000px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+        margin-top: 8%;
+    
+    }
+        .container2 .card2{
+            width: 1400px;
+            position: relative;
+            height: 400px;
+            background: rgb(70, 70, 236);
+            margin: 30px 10px;
+            padding: 26px 20px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0.5px 10px #e6e6e6;
+            transition: 0.3s ease-in-out;
+            margin-top: 5%;
+            
+    
+        }
+        #p2{
+            font-size: 200;
+            color: #fff;
+        }
+        .hom{
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            background: url(../img/Gondar-Castle.jpg) ;
+            background-size: cover;
+            background-position: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+        }
+        .hom-text h1{
+            font-size: var(--big-font);
+            line-height: 1.2;
+            color: black;
+            font-family: cursive;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            font-family: cursive;
+        }
+        .hom-text p{
+            color:blue;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 38px;
+            margin-bottom: 50px;
+            font-family: monospace;
+        }
+        .wrapper{
+            margin: 100px auto;
+            width: 70%;
+            display: flex;
+            
+        }
+       img{
+        float:left;
+        max-width: 400px;
+        border: 3px solid #fff;
+        border-radius: 10px;
+        margin-right: 20px;
+        display: flex;
+        padding: 1rem;
+    
+       }
+       .text-box{
+        color: black;
+       }
+       .text-box h2{
+        font-size: 42px;
+        font-family: cursive;
+        align-items: center;
+       }
+       .in-box p{
+        font-size: 30px;
+        padding: 2rem;
+        font-family: cursive;
+        color: black;
+       }
+       
+       .p-btn{
+        background-color: #660f08;
+        height: 50px;
+        width: 100px ;
+        
+        border-radius: 30%;
+    font-size: 30px;
+        font-weight: 600;
+        font-family: cursive;
+       }
+       .h-btn{
+        font-family: monospace;
+        font-size: 20px;
+        color: black;
+        background-color:antiquewhite;
+        border-radius: 5%;
+       }
+       .text-box p{
+        font-size: large;
+        font-style: initial;
+        font-weight: 500;
+        font-family: cursive;
+       }
+       
+       .ho{
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        background: url(../img/ethiopie-bahar-dar.jpg) ;
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .ho-text h1{
+        font-size: var(--big-font);
+        line-height: 1.2;
+        color: var(--bg-color);
+        font-family: 'Paytone one' ,sans-serif;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+    }
+    
+#para{
+    font-weight: 800;
+}
+.ho-text h1{
+    font-size: var(--big-font);
+    line-height: 1.2;
+    color: black;
+    font-family: 'Paytone one' ,sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.ho-text p{
+    color:blue;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#foot{
+    background-color: gray;
+    position: relative;
+    height: 300px;
+    margin-top: 20%;
+    clear: both;
+}
+.do a {
+    position: relative;
+    font-size: 1.1em;
+    color: #0e0c0c;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-top: 250%;
+    padding-right:10% ;
+}
+.do a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #8d4343;
+    border-radius: 5px;
+    transform-origin:right ;
+    transform: scaleX(0);
+    transition: transform .5s;
+    margin-top: 100%;
+    padding-left: 10%;
+}
+#foo{
+    background-color: gray;
+    position: relative;
+    height: 300px;
+    margin-top: 20%;
+    clear: both;
+}
+.d a {
+    position: relative;
+    font-size: 1.1em;
+    color: #0e0c0c;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-top: 250%;
+    padding-right:10% ;
+}
+.d a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #8d4343;
+    border-radius: 5px;
+    transform-origin:right ;
+    transform: scaleX(0);
+    transition: transform .5s;
+    margin-top: 100%;
+    padding-left: 10%;
+}
+
+
+
+/*footer{
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    padding: 0;
+    flex-direction: column;
+    margin-top: 10%;
+    height: 500%;
+    display: flex;  
+    
+}
+.footer{
+    background-color:rgb(7, 5, 29);
+    padding: 0 ;
+    margin-top: 60%;
+    width: 100%;
+    height: 25%;
+    display: flex; 
+    margin-top: 100%; 
+    
+
+}.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footer-col{
+    width: 10%;
+    padding: 0 3px;
+    flex-grow: 2;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+    top: 0;
+
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    word-spacing: 10px;
+
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding: left 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(57, 10, 226);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    padding-left: 20;
+}
+.footer-col .social-links a:hover{
+    color: #ffffff;
+    background-color: #ffffff;
+}
+*/
+.some{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url(../img/ert\ ale.jpg) ;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+.some-text h1{
+    font-size: var(--big-font);
+    line-height: 1.2;
+    color: var(--bg-color);
+    font-family: 'Paytone one' ,sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+
+/*footer .icons{
+    display: flex;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .icons li{
+    list-style: none;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+footer .icons li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline;
+    transition: 0.5s;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-left: 50%;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+
+}
+footer .icons li a:hover{
+    transform: translateY(-10px);
+    color: #ffffff;
+    background-color: #ffffff;
+}
+*/
